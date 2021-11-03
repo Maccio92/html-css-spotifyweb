@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Sezioni */
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+/* Header */
+header{
+    height: 90px;
+    width: calc( 100% - 250px);
+    background-color: rgba( 0, 0, 0, 0.5);
+    z-index: 3;
+    position: fixed;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.upgrade{
+    color: white;
+    border: solid 2px white;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 1em;
+    width: 200px;
+}
+.upgrade:hover {
+    transform: scale(1.2);
+}
+
+/* Main */
+main{
+    height: calc(100% - 100px);
+    background-color: #141922;
+}
+.sidebar{
+    width: 250px;
+    height: 100%;
+    background-color: black;
+}
+#logo{
+    max-width: 80%;
+    padding: 2em;
+}
+
+/* Lista Home-Cerca-Libreria */
+.icon{
+    margin-left: 2em;
+    width: 10%;
+    margin-right: 0.5em;
+}
+.first-list li{
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+.list-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.list-button:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+.list-button:focus{
+    border-left: 3px solid #adff2f;
+    font-weight: 700;
+}
+
+/* Footer */
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    z-index: 2;
+}
