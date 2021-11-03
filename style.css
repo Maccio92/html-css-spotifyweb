@@ -53,10 +53,11 @@ main{
     width: 250px;
     height: 100%;
     background-color: black;
+    position: relative;
 }
 #logo{
     max-width: 80%;
-    padding: 2em;
+    padding: 1.5em 2em;
 }
 
 /* Lista Home-Cerca-Libreria */
@@ -72,21 +73,26 @@ main{
 .list-button{
     background-color: transparent;
     border: none;
-    color: white;
+    color: #a3a3a3;
     display: flex;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.7em;
     text-decoration: none;
 }
 .list-button:hover{
     font-weight: 700;
     cursor: pointer;
+    color: white;
 }
 .list-button:focus{
     border-left: 3px solid #adff2f;
     font-weight: 700;
+    color: white;
 }
 /* Lista Playlist */
+.playlist{
+    height: 300px;
+}
 .playlist ul{
     margin-left: 1.7em;
 }
@@ -94,8 +100,8 @@ main{
     list-style-type: none;
     padding-bottom: 1em;
     color: #a3a3a3;
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 0.7em;
+    font-weight: 500;
 }
 .playlist h3{
     padding: 1.5em 0 1em 1.8em;
@@ -119,7 +125,55 @@ main{
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.playlist li:hover{
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.square:hover{
+    cursor: pointer;
+    background-color: white;
+}
 
+/* Lista User */
+.user{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    padding: 1em 1.8em;
+}
+.user li {
+    list-style-type: none;
+    color: #a3a3a3;
+    display: flex;
+    font-size: 0.7em;
+    font-weight: 500;
+    align-items: center;
+}
+.user li:hover{
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+.user-icon{
+    width: 7%;
+    margin-right: 0.5em;
+}
+hr{
+    margin: 0.5em 0;
+    width: 80%;
+    background-color: #a3a3a3;
+}
+.user h3{
+    color: white;
+}
+.round{
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color:#a3a3a3 ;
+}
 /* Footer */
 footer{
     height: 100px;
