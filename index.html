@@ -12,7 +12,7 @@
     <title>SpotifyWeb</title>
 </head>
 <body>
-    <header>
+    <header class="flex">
         <button class="upgrade">Effettua l'upgrade</button>
     </header>
     <main>
@@ -25,31 +25,31 @@
                 <!-- Lista Home-Cerca-Libreria -->
                 <ul>
                     <li>
-                        <button class="list-button">
+                        <button class="list-button flex">
                             <img class="icon" src="img/home.svg" alt="icona della home">
                             <p class="first-list-item">Home</p>
                         </button>
                     </li>
                     <li>
-                        <button class="list-button">
+                        <button class="list-button flex">
                             <img class="icon"  src="img/search.svg" alt="icona di ricerca"> 
                             <p class="first-list-item">Cerca</p>
                         </button>
                     </li>
                     <li>
-                        <button class="list-button">
+                        <button class="list-button flex">
                             <img class="icon"  src="img/libreria.svg" alt="icona della libreria"> 
                             <p class="first-list-item">La tua libreria</p>
                         </button>
                     </li>
                 </ul>
             </div>
-            
+
             <!-- Lista Playlist -->
             <div class="playlist">
                 <h3>PLAYLIST</h3>
                 <ul>
-                    <li>
+                    <li class="flex">
                         <div class="square">
                             <i class="fas fa-plus"></i>
                         </div>
@@ -67,12 +67,12 @@
             <!-- Lista User -->
             <div class="user">
                 <ul>
-                    <li>
+                    <li class="flex">
                         <img class="user-icon" src="img/download.svg" alt="Download">
                         <p>Installa App</p>
                     </li>
                     <hr>
-                    <li>
+                    <li class="flex">
                         <img class="user-icon round" src="img/profile.svg" alt="Profilo utente">
                         <h3>John Doe</h3>
                     </li>
@@ -81,6 +81,51 @@
         </div>
         <div class="main-section"></div>
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="flex">
+        <section class="external flex">
+            <div class="flex">
+                <img class="mini-cover" src="img/sinister.jpeg" alt="Cover Sinister">
+                <p>Sinister<br><span>Brano Nome</span></p>
+            </div>
+            <div class="flex ">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </section>
+        <section class="central">
+            <div class="player">
+                <ul class="flex">
+                    <li>
+                        <i class="fas fa-random"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-step-backward"></i>
+                    </li>
+                    <li>
+                        <i class="far fa-play-circle"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-step-forward"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-redo"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class=" timer flex">
+                <p>0:25</p>
+                <div class="time"></div>
+                <p>4:35</p>
+            </div>
+        </section>
+        <section class="external flex">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="volume"></div>
+        </section>
+    </footer>
 </body>
 </html>
