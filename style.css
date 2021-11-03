@@ -38,9 +38,10 @@ header{
     border-radius: 50px;
     padding: 1em;
     width: 200px;
+    margin-right: 1em;
 }
 .upgrade:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* Main */
@@ -84,6 +85,39 @@ main{
 .list-button:focus{
     border-left: 3px solid #adff2f;
     font-weight: 700;
+}
+/* Lista Playlist */
+.playlist ul{
+    margin-left: 1.7em;
+}
+.playlist ul li{
+    list-style-type: none;
+    padding-bottom: 1em;
+    color: #a3a3a3;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.playlist h3{
+    padding: 1.5em 0 1em 1.8em;
+    font-size: 0.9em;
+}
+.playlist ul li:first-child{
+    display: flex;
+    align-items: center;
+}
+.square{
+    background-color: #a3a3a3;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 0.5em;
+}
+.fa-plus{
+    color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Footer */
