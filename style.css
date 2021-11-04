@@ -229,6 +229,11 @@ hr{
 }
 .fa-play-circle-cover{
     display: none;
+    position: absolute;
+    width: 5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .subtitle{
     padding-top:0.8em ;
@@ -242,13 +247,8 @@ hr{
     cursor: pointer;
     filter: opacity(0.5);
 }
-.cover:hover .fa-play-circle-cover{
+.cover-list li:hover .fa-play-circle-cover{
     display: block;
-    position: absolute;
-    width: 5em;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 .cover-john-doe p{
     padding-left: 2.5em;
