@@ -207,10 +207,14 @@ hr{
 .navbar ul li{
     padding: 0.5em 1em;
     font-size: 0.7em;
+    font-weight: 600;
+    color:#a3a3a3 ;
+} 
+.navbar ul li:first-child{
+    border-bottom: solid 3px #adff2f;;
 } 
 .navbar ul li:hover{
-    border-bottom: solid 2px #adff2f;
-    border-bottom-style: outset;
+    color: white;
     cursor: pointer;
 }
 .cover-list ul {
@@ -221,6 +225,10 @@ hr{
 }
 .cover-list li{
     padding-right: 1em;
+    position: relative;
+}
+.fa-play-circle-cover{
+    display: none;
 }
 .subtitle{
     padding-top:0.8em ;
@@ -229,6 +237,18 @@ hr{
 }
 .cover{
     width: 10vw;
+}
+.cover:hover{
+    cursor: pointer;
+    filter: opacity(0.5);
+}
+.cover:hover .fa-play-circle-cover{
+    display: block;
+    position: absolute;
+    width: 5em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .cover-john-doe p{
     padding-left: 2.5em;
@@ -472,7 +492,7 @@ footer{
         width: 10vw;
     }
     .navbar ul li {
-        padding: 1.5em 1.8em;
+        padding: 1.5em 1.5em;
     }
 }
 
