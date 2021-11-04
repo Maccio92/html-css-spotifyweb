@@ -113,6 +113,7 @@ main{
     font-weight: 700;
     color: white;
 }
+
 /* Lista Playlist */
 .playlist{
     height: 30vh;
@@ -225,16 +226,8 @@ hr{
 }
 .cover-list li{
     padding-right: 1em;
-    position: relative;
 }
-.fa-play-circle-cover{
-    display: none;
-    position: absolute;
-    width: 5em;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .subtitle{
     padding-top:0.8em ;
     width: 10vw;
@@ -243,12 +236,33 @@ hr{
 .cover{
     width: 10vw;
 }
-.cover:hover{
+.cover img{
+    width: 100%;
+}
+.album{
+    position: relative;
+}
+.play-hover{
+    display: none;
+    position: absolute;
+    font-size: 2em;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: white;
+}
+.album:hover .cover {
     cursor: pointer;
     filter: opacity(0.5);
 }
-.cover-list li:hover .fa-play-circle-cover{
+.album:hover .play-hover{
     display: block;
+    cursor: pointer; 
+}
+.album:hover .cover-round{
+    cursor: pointer;
+    filter: opacity(0.5);
 }
 .cover-john-doe p{
     padding-left: 2.5em;
@@ -281,6 +295,7 @@ hr{
     width: 10vw;
     border-radius: 100px;
 }
+
 /* Footer */
 footer{
     height: 100px;
@@ -290,7 +305,6 @@ footer{
     z-index: 2;
     justify-content: space-between;
 }
-
 .external{
     width: 15vw;
     padding-left: 1.3em;
@@ -331,7 +345,6 @@ footer{
 .player li{
     list-style-type: none;
     padding: 0 1em;
-    
 }
 .player li:hover{
     cursor: pointer;
@@ -364,7 +377,6 @@ footer{
     width: 10vw;
     height: 100%;
     border-radius: 9px;
-    
 }
 .circle{
     width: 20px;
@@ -390,8 +402,6 @@ footer{
     border-radius: 9px;
     cursor: pointer;
 }
-
-
 
 /* Barra del volume */
 .volume {
@@ -434,6 +444,8 @@ footer{
     display: block;
     cursor: pointer;
 }
+
+
 /* SCREEN 1100 PX */
 @media screen and (max-width:1100px){
     .cover{
@@ -506,7 +518,6 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* justify-content: space-between; */
     }
     .main-section{
         width: calc(100% - 50px);
