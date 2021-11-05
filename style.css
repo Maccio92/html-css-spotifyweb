@@ -22,7 +22,7 @@ li{
 }
 /* Testi */
 h2{
-    padding: 1.5em 1.2em 0;
+    /* padding: 1.5em 1.2em 0; */
     font-size: 1.2em;
 }
 h4{
@@ -91,6 +91,10 @@ main{
     margin-left: 2em;
     width: 10%;
     margin-right: 0.5em;
+    fill:#a3a3a3 ;
+}
+.list-button:hover .icon{
+    fill: white;
 }
 .first-list li{
     padding-bottom: 1em;
@@ -104,13 +108,11 @@ main{
     font-weight: 700;
 }
 .list-button:hover{
-    font-weight: 500;
     cursor: pointer;
     color: white;
 }
 .list-button:focus{
     border-left: 3px solid #adff2f;
-    font-weight: 700;
     color: white;
 }
 
@@ -212,22 +214,23 @@ hr{
     color:#a3a3a3 ;
 } 
 .navbar ul li:first-child{
-    border-bottom: solid 3px #adff2f;;
+    border-bottom: solid 3px #adff2f;
 } 
 .navbar ul li:hover{
     color: white;
     cursor: pointer;
 }
 .cover-list ul {
-    padding-left: 1em;
-    padding-top: 2em;
+    padding-left: 1.5em;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 .cover-list li{
     padding-right: 1em;
 }
-
+.title{
+    padding: 2em 1.5em;
+}
 .subtitle{
     padding-top:0.8em ;
     width: 10vw;
@@ -265,27 +268,23 @@ hr{
     filter: opacity(0.5);
 }
 .cover-john-doe p{
-    padding-left: 2.5em;
-    padding-bottom: 2em;
     font-size: 0.6em;
     color:  #a3a3a3;
 }
 .cover-john-doe ul{
     justify-content: start;
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 .cover-john-doe li{
     padding-right: 1em;
 }
 .popular p{
-    padding-left: 2.5em;
-    padding-bottom: 2em;
     font-size: 0.6em;
     color:  #a3a3a3;
 }
 .popular ul{
     justify-content: start;
-    padding-left: 1em;
+    padding-left: 1.5em;
     list-style-type: none;
 }
 .popular li{
@@ -306,7 +305,7 @@ footer{
     justify-content: space-between;
 }
 .external{
-    width: 15vw;
+    width: 250px;
     padding-left: 1.3em;
     justify-content: space-between;
 }
@@ -316,7 +315,7 @@ footer{
     width: 10em;
 }
 .mini-cover{
-    width: 3vw;
+    width: 50px;
     margin-right: 1em;
 }
 .external i{
@@ -337,7 +336,7 @@ footer{
     cursor: pointer;
 }
 .central{
-    width: 60%;
+    width: calc(100% - 500px);
 }
 .player ul{
     justify-content: center;
@@ -459,10 +458,14 @@ footer{
         width: 15vw ;
     }
     .external{
-        width: 25%;
+        width: 250px;
+    }
+    .central{
+        width: calc(100% - 500px);
     }
     .time{
-        width: 45%;
+        width: 60%;
+        margin: 0 1em;
     }
     .external div>p{
         width: 8em;
@@ -566,7 +569,7 @@ footer{
         display: none;
     }
     .mini-cover{
-        width: 10vw
+        width: 8vw
     }
     .central{
         width: 40%;
