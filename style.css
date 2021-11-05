@@ -64,6 +64,16 @@ header{
     transform: scale(1.1);
 }
 
+/* BONUS */
+@media screen and (max-height:350px) {
+    header{
+        height: 0px;
+    }
+    .upgrade{
+        display: none;
+    }
+}
+
 /* Main */
 main{
     width: 100%;
@@ -609,3 +619,4 @@ footer{
         padding: 1.5em 2em;
     }
 }
+
