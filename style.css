@@ -218,7 +218,7 @@ hr{
     flex-wrap: wrap;
 }
 .navbar ul li{
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     font-size: 0.7em;
     font-weight: 600;
     color:#a3a3a3 ;
@@ -234,26 +234,26 @@ hr{
     padding-left: 1.5em;
     align-items: flex-start;
     flex-wrap: wrap;
+    width: 100%;
 }
 .cover-list li{
     padding-right: 1em;
+    width: calc(100% / 6)
 }
 .title{
     padding: 2em 1.5em;
 }
 .subtitle{
     padding-top:0.8em ;
-    width: 10vw;
+    width: 100%;
     text-align: center;
 }
-.cover{
-    width: 10vw;
-}
-.cover img{
-    width: 100%;
-}
+
 .album{
     position: relative;
+}
+.cover{
+    width: 100%;
 }
 .play-hover{
     display: none;
@@ -284,9 +284,11 @@ hr{
 .cover-john-doe ul{
     justify-content: start;
     padding-left: 1.5em;
+    width: 100%;
 }
 .cover-john-doe li{
     padding-right: 1em;
+    width: calc(100% / 6);
 }
 .popular p{
     font-size: 0.6em;
@@ -294,11 +296,14 @@ hr{
 }
 .popular ul{
     justify-content: start;
+    align-items: start;
     padding-left: 1.5em;
     list-style-type: none;
+    width: 100%;
 }
 .popular li{
     padding-right: 1em;
+    width: calc(100% / 6);
 }
 .cover-round{
     width: 10vw;
@@ -457,15 +462,12 @@ footer{
 
 /* SCREEN 1100 PX */
 @media screen and (max-width:1100px){
-    .cover{
-        width: 15vw;
-    }
     .subtitle{
-        width: 15vw;
+        width: 100%;
         padding-bottom: 1em;
     }
     .cover-round{
-        width: 15vw ;
+        width: 100% ;
     }
     .external{
         width: 250px;
@@ -483,18 +485,18 @@ footer{
    .player li{
        padding: 0 0.5em;
    }
+   .cover-list li, .cover-john-doe li, .popular li{
+       width: calc(100% / 4);
+   }
 }
 /* SCREEN 700PX */
 @media screen and (max-width:700px) {
-    .cover{
-        width: 23vw;
+    .cover-list li, .cover-john-doe li, .popular li{
+        width: calc(100% / 2);
     }
     .subtitle{
-        width: 23vw;
+        width: 100%;
         padding-bottom: 1em;
-    }
-    .cover-round{
-        width: 23vw ;
     }
     .external{
         width: 35%;
@@ -604,15 +606,15 @@ footer{
         margin: 0 0.5em;
         width: 40%;
     }
-    .cover{
-        width: 35vw;
+    .cover-list li, .cover-john-doe li, .popular li{
+        width: calc(100% / 2);
     }
     .subtitle{
-        width: 35vw;
+        width: 100%;
         padding-bottom: 1em;
     }
     .cover-round{
-        width: 35vw ;
+        width: 100% ;
         border-radius: 150px;
     }
     .navbar ul li {
