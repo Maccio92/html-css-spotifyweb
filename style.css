@@ -220,16 +220,30 @@ hr{
 .navbar ul li{
     padding: 0.5em 0.5em;
     font-size: 0.7em;
-    font-weight: 600;
-    color:#a3a3a3 ;
-} 
-.navbar ul li:first-child{
-    border-bottom: solid 3px #adff2f;
 } 
 .navbar ul li:hover{
     color: white;
     cursor: pointer;
 }
+.line{
+    font-weight: 600;
+    color:#a3a3a3 ;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 1em;
+}
+.line:focus:after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 3px;
+    background: #adff2f;
+    content: "";
+    display: block;
+}
+
 .cover-list ul {
     padding-left: 1.5em;
     align-items: flex-start;
